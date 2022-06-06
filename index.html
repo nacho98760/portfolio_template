@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+  <html class="m-0 p-0 scroll-smooth">
+      <head>
+          <title>Portfolio</title>
+          <link href="main.css" rel="stylesheet">
+          <script src="https://cdn.tailwindcss.com"></script>
+          <style type="text/tailwindcss">
+            @layer components {
+              .nav-items{
+                @apply text-white font-semibold p-4 rounded-full hover:bg-white hover:text-black transition duration-500 mx-2
+              }
+            }
+  </style>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              spacing: {
+                "480": "480px",
+                "495": "495px",
+                "550": "550px",
+              }
+            }
+          }
+        }
+      </script>
+      </head>
+      <body>
+        <section class="min-h-screen bg-gradient-to-r from-neutral-900 via-zinc-900 to-neutral-900">
+          <header>
+            <nav class="w-full bg-gradient-to-r from-neutral-900 via-zinc-900 to-neutral-900 fixed z-10 backdrop-blur-sm">
+              <ul class="flex justify-end items-center py-7">
+                <li><a href="#home" class="nav-items">Home</a></li>
+                <li><a href="#about-me" class="nav-items">About Me</a></li>
+                <li><a href="#projects" class="nav-items">Projects</a></li>
+                <li class="text-white font-semibold hover:bg-white hover:text-black rounded-full p-4 transition duration-500 ml-2 mr-10"><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+          <section id="home min-w-full">
+            <div class="xl:px-4 xl:pt-44 pt-32 xl:pb-40 pr-32 xl:flex-nowrap flex flex-wrap justify-center">
+              <div class="w-52 h-52 rounded-full ml-32 mb-6 xl:mb-0 mt-2 xl:-mt-10 border-4 border-solid border-gray-200 flex justify-center"> 
+                <img class="rounded-full object-cover" src="images/paisaje.jpg" alt="Paisaje" >
+              </div>
+              <h1 class="ml-40 lg:mt-12 xl:mt-0 font-bold text-white text-4xl xl:text-6xl"><span class="texto"></span> <br> <span class="texto-1"></span></h1>
+            </div>
+          </section>
+
+          <br>
+
+          <section id="about-me">
+            <div class="w-full flex flex-col items-center">
+              <h1 class="w-full text-center text-white font-bold text-3xl xl:text-5xl mb-4 xl:mb-8 mt-24 xl:mt-10">About me</h1>
+              <br>
+              <div class="w-550 rounded-lg h-auto bg-gradient-to-b from-gray-300 via-gray-200 to-gray-300 shadow shadow-gray-100">
+                <p class="font-medium text-gray-800 text-2xl m-10">
+                  Hello there! My name is Ignacio, better known as <b>nacho98760</b>. When I started learning Front-End Web development a few months ago, I immediately fell in love with it and constantly kept practicing up to today.
+                </p>
+                <p class="font-medium text-gray-800 text-2xl m-10">
+                  I've worked on many different projects including Survey Forms, Landing Pages and a Calculator using technologies like <b>TailwindCSS</b> and <b>React</b>.
+                </p>
+                <p class="font-medium text-gray-800 text-2xl m-10">
+                  The way you can design web pages nowdays seems just beautiful, and that's what keeps me motivated to do a little better every day.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="projects">
+            <div class="w-full flex justify-center">
+              <h1 class="text-white font-bold text-3xl xl:text-5xl mb-10 mt-56">Projects</h1>
+            </div>
+            <div class="w-full flex flex-col items-center xl:flex-row xl:justify-center">
+              <a href="https://nacho98760-calculator.netlify.app"><div class="group w-495 mb-20 xl:mb-0 xl:-ml-4 xl:mr-20 h-auto bg-white rounded-t bg-gray-300 hover:bg-gray-600 transition duration-600">
+                <div class="w-495 h-80 rounded-sm">
+                  <img class="w-full h-full object-cover rounded-t-sm group-hover:opacity-10" src="images/calculadora4.jpg" alt="">
+                </div>
+                <div class="w-full h-auto flex flex-col items-center">
+                  <p class="text-transparent font-bold p-4 -mt-4 mr-4 text-xl rounded-full border-2 border-solid border-transparent group-hover:text-white group-hover:border-white">Click to see project</p>
+                  <h1 class="pt-2 pb-2 text-3xl font-bold group-hover:text-transparent">Calculator</h1>
+                  <p class="font-semibold text-gray-900 text-center pb-28 group-hover:text-transparent">A simple calculator with a nice design for <br> personal use</p>
+                </div>
+                <div class="flex flex-col justify-center pr-4">
+                  <p class="text-center font-semibold text-xl mb-4 mr-2 group-hover:text-transparent">Made with </p>
+                  <div class="flex space-around justify-center">
+                    <div class="pb-2 pl-2">
+                      <div class="flex justify-center items-center w-24 h-10 bg-red-600 rounded-full text-white font-bold shadow shadow-red-600 group-hover:text-transparent group-hover:bg-transparent group-hover:shadow-transparent">HTML5</div>
+                    </div>
+                    <div class="pb-2 pl-2">
+                      <div class="flex justify-center items-center w-24 h-10 bg-blue-600 rounded-full text-white font-bold shadow shadow-blue-600 group-hover:text-transparent group-hover:bg-transparent group-hover:shadow-transparent">CSS3</div>
+                    </div>
+                    <div class="pb-2 pl-2">
+                      <div class="flex justify-center items-center w-24 h-10 bg-yellow-500 rounded-full text-white font-bold shadow shadow-yellow-500 group-hover:text-transparent group-hover:bg-transparent group-hover:shadow-transparent">JavaScript</div>
+                    </div>
+                    <div class="pb-2 pl-2">
+                      <div class="flex justify-center items-center w-24 h-10 bg-cyan-500 rounded-full text-white font-bold shadow shadow-cyan-500 group-hover:text-transparent group-hover:bg-transparent group-hover:shadow-transparent">ReactJS</div>
+                    </div>
+                  </div>
+                </div>
+              </div></a>
+
+              <a href="https://nacho98760-surveyform.netlify.app"><div class="group w-495 h-auto bg-white rounded-t bg-gray-300 hover:bg-gray-600 transition duration-600">
+                <div class="w-495 h-80 rounded-sm">
+                  <img class="w-full h-full object-cover rounded-t-sm group-hover:opacity-10" src="images/formulario.png" alt="Survey Form">
+                </div>
+                <div class="w-full h-auto flex flex-col items-center">
+                  <p class="text-transparent font-bold p-4 -mt-4 mr-4 text-xl rounded-full border-2 border-solid border-transparent group-hover:text-white group-hover:border-white">Click to see project</p>
+                  <h1 class="pt-2 pb-2 text-3xl font-bold group-hover:text-transparent">Survey Form</h1>
+                  <p class="font-semibold text-gray-900 text-center pb-28 group-hover:text-transparent">A Survey Form for programmers! Let's find out <br> how are you doing in this journey</p>
+                </div>
+                <div class="flex flex-col justify-center pr-4">
+                  <p class="text-center font-semibold text-xl mb-4 mr-2 group-hover:text-transparent">Made with </p>
+                  <div class="flex space-around justify-center">
+                    <div class="pb-2 pl-2">
+                      <div class="flex justify-center items-center w-24 h-10 bg-red-600 rounded-full text-white font-bold shadow shadow-red-600 group-hover:text-transparent group-hover:bg-transparent group-hover:shadow-transparent">HTML5</div>
+                    </div>
+                    <div class="pb-2 pl-2">
+                      <div class="flex justify-center items-center w-24 h-10 bg-blue-600 rounded-full text-white font-bold shadow shadow-blue-600 group-hover:text-transparent group-hover:bg-transparent group-hover:shadow-transparent">CSS3</div>
+                    </div>
+                  </div>
+                </div>
+              </div></a>
+            </div>
+          </section>
+          
+        </section>
+        <script src="animations.js"></script>
+      </body>
+  </html>
